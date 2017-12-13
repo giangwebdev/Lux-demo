@@ -1,0 +1,158 @@
+/*body{
+	background-image: url('../img/background.jpg');
+	background-size: cover;
+	background-repeat: : no-repeat;
+}*/
+
+/*Big header*/
+/*#logo-large{
+	/*position: fixed;
+	top: 40%;
+	left: 30%;
+    margin-top: -9em; 
+    margin-left: -15em;
+    width: 1920px;
+    margin: 0 auto;
+    color: white; 
+	display: flex;
+  	flex-direction: row;
+	
+}
+#lux{
+	color: gold;
+	font-size: 17em;
+	font-weight: bold;
+
+}
+#wrapper{
+	margin-top: 7.42em; 
+}
+
+
+#menu-large>ul{
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    border-radius: 25px;
+}
+
+#menu-large>ul>li>a{
+	display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+#menu-large>ul>li>a:hover{
+	background-color: #111;
+}
+
+
+#design{
+	font-size: 7em;
+	letter-spacing: 0.3em;
+	padding-left: 0.17em;
+}
+
+#slogan{
+	font-size: 2em;
+	text-align: center;
+}
+*/
+
+
+/*Normal things*/
+button:focus {outline:0;}
+
+
+ul#mainNav {
+    float:left;
+    width:auto;
+    margin:0; padding:0;
+    color:white;
+    list-style-type:none;
+}
+ul#mainNav > li {
+    float:left;
+    display:inline;
+    position:relative;
+    padding:5px;
+    border:1px white solid;
+    background-color:black;
+    
+}
+ul#mainNav > li:hover {
+    background:white;
+    color:black;
+    border:1px black solid;
+}
+ul#mainNav > li:hover ul {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s, 0s;
+}
+ul#mainNav li ul {
+    position:absolute;
+    float:left;
+    width:100px;
+    height:0;
+    padding:10px;
+    margin:0;
+    visibility: hidden;
+    opacity: 0;
+    transition-property: opacity, visibility;
+    transition-duration: .4s, 0s;
+    transition-delay: 0s, .4s;
+}
+ul#mainNav ul li {   
+    background-color:white;
+    border:1px black solid;
+}
+ul#mainNav ul li:hover {
+    background-color:black;
+    border:1px white solid;
+    color:white;
+}
+
+
+
+
+
+
+
+/*______________________________________*/
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+.img-slide{
+	width: 100%;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/*End of fading animation*/
+
+/*End of slideshow container
