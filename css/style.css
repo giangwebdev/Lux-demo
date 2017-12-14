@@ -63,32 +63,25 @@
 */
 
 
-/*Normal things*/
+/*Normal header*/
 
-
-
-ul#mainNav > li > a{
-    float:left;
-    width:auto;
-    margin:0; padding:0;
-    color:white;
-    list-style-type:none;
-	text-decoration: none;
-}
 ul#mainNav > li {
     float:left;
-    display:inline;
-    position:relative;
-    padding: 15px;
-    border:1px grey solid;
     background-color:black;
-    
-    border: none;
-
+    list-style:none;
+    border: 0;
 }
+
+ul#mainNav > li > a{
+	display: block;
+    color:white;
+	text-decoration: none;
+	padding: 15px;
+}
+
 ul#mainNav > li:hover {
-    background:grey;
-    color:black;
+	background-color: #b3b3b3;
+    color:white;
     border:none;
 
 }
@@ -101,28 +94,40 @@ ul#dropdown {
     position:absolute;
     list-style-type: none;
     z-index: 99 !important;
-    border: 1px solid black;
     background-color: black;
     width:15em;
-    margin-top:2.5em;
+    padding-left: 10px;
+	padding-bottom: 5px;
+    padding-top: 5px;
     visibility: hidden;
     opacity: 0;
     transition-property: opacity, visibility;
-    transition-duration: .4s, 0s;
-    transition-delay: 0s, .4s;
+    transition-duration: .2s, 0s;
+    transition-delay: 0s, .2s;
 }
 ul#dropdown > li > a {   
+	display: block;
     background-color:black;
-    padding-left: 15px ;
-	
     color: white;
-    width:15em;
-    height: 3em;
     text-decoration: none;
+	margin: 2px;
+	
+}
+ul#dropdown >li{
+	border-bottom-color: black;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	-webkit-transition: border 500ms ease;
+	  -moz-transition: border 500ms ease;
+	  -ms-transition: border 500ms ease;
+	  -o-transition: border 500ms ease;
+	  transition: border 500ms ease; 
+	
 }
 ul#dropdown >li:hover {
-    border-bottom: 2px grey solid; 
+    border-bottom: 1px white solid; 
     text-decoration: none;
+
 }
 
 
@@ -135,12 +140,8 @@ ul#dropdown >li:hover {
 }
 
 
-
-
-/*______________________________________*/
-.mySlides {display:none}
-
 /* Slideshow container */
+.mySlides {display:none}
 .slideshow-container {
   max-width: 100%;
   position: relative;
@@ -168,6 +169,12 @@ ul#dropdown >li:hover {
   from {opacity: .4} 
   to {opacity: 1}
 }
-/*End of fading animation*/
 
-/*End of slideshow container
+/*Unselectable*/
+.unselectable{
+	user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}

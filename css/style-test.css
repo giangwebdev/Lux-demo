@@ -1,0 +1,52 @@
+.box{
+	width: 0;
+	height: 0;
+	border-bottom: 400px solid red;
+	border-right: 400px solid red;
+	float: left;
+
+}
+
+.triangle{
+	width: 0;
+	height: 0;
+	border-bottom: 400px solid red;
+	border-right:150px solid transparent;
+	float:left;
+}
+
+.box, .triangle{
+	display: inline-block;
+
+}
+.outer{
+	white-space:nowrap;
+    overflow:hidden;
+}
+
+.parallelogram {
+	width: 400px;
+	height: 100px;
+	-webkit-transform: skew(20deg);
+	   -moz-transform: skew(20deg);
+	     -o-transform: skew(20deg);
+	background: red;
+}
+
+.outer, .inner{
+	display: inline-block;
+	
+}
+
+#layout-container{
+	width: 100%;
+	position: relative;
+}
+
+.outer, .inner{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
